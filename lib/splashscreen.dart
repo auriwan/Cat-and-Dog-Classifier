@@ -23,12 +23,12 @@ class _MySplashState extends State<MySplash> {
           textStyle: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 25,
-              color: Colors.grey
+              color: Colors.white
           ),
         )
       ),
-      image: Image.asset('assets/cat_and_dog.png'),
-      backgroundColor: Colors.blue,
+      image: Image.asset('assets/cat_and_dog.png',color: Colors.white,),
+      backgroundColor: Colors.black,
       photoSize: 100,
       loaderColor: Colors.white,
     );
