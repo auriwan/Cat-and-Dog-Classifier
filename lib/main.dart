@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cat_dog_classifier/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Cat and Dog Classifier',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ,
+      home: MySplash(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
