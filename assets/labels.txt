@@ -1,2 +1,2 @@
-0 Kucing
-1 Anjing
+Kucing
+Anjing
