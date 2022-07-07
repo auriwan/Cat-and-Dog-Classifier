@@ -52,6 +52,25 @@ class _HomeState extends State<Home> {
     super.dispose();
   }
 
+  pickImage() async{
+    var image = await picker.pickImage(source: ImageSource.camera);
+    if(image == null ) return null;
+    setState(() {
+      _image = File(image.path);
+    });
+    detectImage(_image);
+  }
+
+  pickGallery()async{
+    var image = await picker.pickImage(source: ImageSource.gallery);
+    if(image == null ) return null;
+    setState(() {
+      _image = File(image.path);
+    });
+    detectImage(_image);
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
